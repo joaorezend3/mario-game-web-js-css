@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+}
+.game-board {
+  width: 100%;
+  height: 600px;
+  border-bottom: 15px solid rgb(51, 255, 0);
+  background: linear-gradient(#87cee8, #e0f6ff);
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+}
+.pipe {
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+  animation: animation-pipe 1.5s linear infinite;
+}
+
+@keyframes animation-pipe {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+.mario {
+  position: absolute;
+  width: 150px;
+  bottom: 0px;
+}
+.jump {
+  animation: mario-animation-jump 500ms ease-out;
+}
+@keyframes mario-animation-jump {
+  0% {
+    bottom: 0px;
+  }
+  40% {
+    bottom: 180px;
+  }
+  50% {
+    bottom: 180px;
+  }
+  60% {
+    bottom: 180px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+.nuvem {
+  position: absolute;
+  width: 400px;
+  animation: animation-nuvem 6s infinite linear;
+  right: 0;
+}
+@keyframes animation-nuvem {
+  from {
+    right: -400px;
+  }
+  to {
+    right: 100%;
+  }
+}
+.btn-restart {
+  position: absolute;
+  display: none;
+  top: 255px;
+  left: 45%;
+  background-image: linear-gradient(to left, rgb(255, 255, 255), #87cee8);
+  color: blue;
+  font-weight: bolder;
+  border: 1px solid white;
+  height: 55px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 1s;
+  box-shadow: 51px black;
+}
+.btn-restart:hover {
+  background-image: linear-gradient(to left, #87cee8, rgb(255, 255, 255));
+  transform: scaleX(1.3) scaleY(1.1);
+  border: 1px solid #87cee8;
+  color: black;
+}
