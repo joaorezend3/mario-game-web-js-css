@@ -11,7 +11,7 @@
 ## Instalação
 
 > Para rodar o jogo, basta baixar o arquivo HTML e os assets (imagens e arquivos de estilo) e abrir o arquivo HTML em um navegador. Não é necessário instalar nenhuma dependência.<br> Ou você pode clonar o repositório:
-> `git clone https://github.com/`
+> `git clone https://github.com/joaorezend3/mario-game-web-js-css.git`
 
 ## Como jogar
 
