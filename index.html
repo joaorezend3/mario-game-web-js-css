@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html>
   <head>
     <link rel="stylesheet" href="assents/css/css.style.css" />
     <title>Mario Game</title>
-    <script src="assents/js/java.js"></script>
   </head>
   <body>
     <div class="game-board">
       <img class="pipe" src="assents/imgs/pipe.png" />
       <img class="nuvem" src="assents/imgs/clouds.png" />
+      <p id="pontos"></p>
       <img class="mario" src="assents/imgs/mario.gif" />
+      <button onclick="jump()" class="jumpMoba">Jump</button>
     </div>
-    <button class="btn-restart" onclick="window.location.reload() ">
-      Restart
-    </button>
+    <button class="btn-restart" onclick="window.location.reload() ">Restart</button>
+    <script src="assents/js/java.js"></script>
   </body>
 </html>

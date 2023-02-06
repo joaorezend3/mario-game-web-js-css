@@ -87,3 +87,84 @@
   transform: scaleY(1.1);
   border-radius: 4% 16% 4%;
 }
+.jumpMoba{
+  height: 90px;
+  width: 90px;
+  font-weight: 700;
+  border-radius: 100%;
+  border: none;
+  background-color: #87cee8;
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  animation:  btnJump infinite ease 1s;
+  cursor: grab;
+}
+.jumpMoba::after{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  background-color: aqua;
+  border-radius: 20%;
+  z-index: -1;
+  color: white;
+}
+@keyframes btnJump {
+  0%{
+    transform: rotate(0deg);
+    border-radius: 100%;
+    height: 49px;
+    width: 49px;
+  }
+  50%{
+    height: 60px;
+    width: 60px;
+    border-radius: 12%;
+    transform: rotate(350deg);
+  }
+  100%{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    transform: rotate(0deg);
+  }
+  
+}
+.modal{
+  flex-wrap: wrap;
+  margin-top: 10%;
+  text-align: center;
+  color: #000;
+  width: 100vw;
+  height: 100vh;
+  background-color: #87cee8;
+}
+#pontos{
+  background-color: #40aad1;
+  color: #e0f6ff;
+  border-radius: 90px;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+  width: 90px;  
+  height: 30px;
+ padding: 20px;
+ text-align: center;
+ animation: pnts 1s infinite;
+}
+@keyframes pnts {
+  0%{
+    background-color: #40aad1;
+  }
+  50%{
+    background-color: #87cee8;
+    border-radius: 50%;
+  }
+  100%{
+    border-radius: 100%;
+  }
+  
+}

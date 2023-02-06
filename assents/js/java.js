@@ -1,14 +1,26 @@
+// let alertShow = false;
+// if (!alertShow) {
+//   alert("Clicke qualquer tecla de para pular ou precione no botão 'JUMP'")
+//   alertShow = true;
+// };
+const display = document.querySelector("#contagem");
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const nuvem = document.querySelector(".nuvem");
 const restart = document.querySelector(".btn-restart");
+const pontos = document.querySelector("#pontos");
+let count = 0;
 
 function jump() {
   mario.classList.add("jump");
   setTimeout(function () {
     mario.classList.remove("jump");
   }, 500);
+  count++;
+  pontos.textContent = 'Pontos: '+count;
 }
+
+
 
 document.addEventListener("keydown", jump);
 
@@ -34,6 +46,7 @@ const loop = setInterval(function () {
     nuvem.style.left = `${positionNuvem}px`;
 
     restart.style.display = "block";
+    alert("Seus Pontos:" + count)
     clearInterval(loop);
   }
 }, 10);
