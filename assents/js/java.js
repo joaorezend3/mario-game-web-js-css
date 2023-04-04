@@ -1,8 +1,3 @@
-let alertShow = false;
-if (!alertShow) {
-  alert("Clicke qualquer tecla de para pular ou precione no botão 'JUMP' Essa simulação não está responsiva para dispositiovos menores.");
-  alertShow = true;
-};
 const display = document.querySelector("#contagem");
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
